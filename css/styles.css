@@ -123,6 +123,20 @@ body {
     color: #1B1B1B;
 }
 
+ul, p {
+    margin: 0;
+}
+
+h1 {
+    margin: 60px auto 30px;
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 60px auto 40px;
+}
+
 
 /* Header */
 
@@ -145,10 +159,6 @@ header {
 .navbar {
     display: flex;
     align-items: center;    
-}
-
-ul {
-    margin: 0;
 }
 
 ul.menu li {
@@ -197,19 +207,6 @@ main {
     text-align: center;
 }
 
-h1 {
-    margin: 60px auto 30px;
-    font-size: 64px;
-}
-
-h2 {
-    font-size: 48px;
-    margin: 60px auto 40px;
-}
-
-p {
-    margin: 0;
-}
 
 /* About */
 
@@ -314,6 +311,10 @@ footer {
     font-size: 16px;
     color: #FFFFFF;
     opacity: 40%;
+}
+
+ul.menu_social li {
+    padding: 0 8px;
 }
 
 .social_link {
