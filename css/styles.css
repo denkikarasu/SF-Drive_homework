@@ -123,32 +123,36 @@ body {
     color: #1B1B1B;
 }
 
+ul, p {
+    margin: 0;
+}
+
+h1 {
+    margin: 60px auto 30px;
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 60px auto 40px;
+}
+
 
 /* Header */
 
 header {
     height: 90px;
     padding: 0px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: #FFFFFF;
 }
 
 .logo_link {
+    position: absolute;
+    top: 31px;
     font-family: "Rubik";
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;    
-}
-
-ul {
-    margin: 0;
 }
 
 ul.menu li {
@@ -157,12 +161,21 @@ ul.menu li {
     padding: 0 15px;
 }
 
+.navbar_menu {
+    position: absolute;
+    top: 31px;
+    right: 186px;
+}
+
 .navbar_link {
     font-size: 16px;
     text-decoration: none;
 }
 
 .button_login {
+    position: absolute;
+    top: 23px;
+    right: 40px;
     margin-left: 25px;
     padding: 12px 30px;
     background-color: #FFFFFF;
@@ -197,19 +210,6 @@ main {
     text-align: center;
 }
 
-h1 {
-    margin: 60px auto 30px;
-    font-size: 64px;
-}
-
-h2 {
-    font-size: 48px;
-    margin: 60px auto 40px;
-}
-
-p {
-    margin: 0;
-}
 
 /* About */
 
@@ -230,19 +230,22 @@ p {
     background: #F7F9FB;
 }
 
-.contact_details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact_details { */
+    position: relative;
 }
 
 .contacts_item {
-    margin: 0px 70px;
+    position: relative;
+    display: inline-block;
     width: 264px;
-    min-width: 200px;
+    height: 56px;
+    position: relative;
+    margin: 0px 70px;
 }
 
 .vertical_separator {
+    position: absolute;
+    display: inline-block;
     width: 1px;
     min-width: 1px;
     height: 62px;
@@ -250,12 +253,17 @@ p {
 }
 
 .contact_type {
+    display: block;
+    position: relative;
     color: #4F4F4F;
     font-size: 14px;
     line-height: 21px;
 }
 
 .contact_info {
+    display: block;
+    position: relative;
+    top: 6px;
     color: #000000;
     font-size: 20px;
     margin-top: 6px;
@@ -272,12 +280,10 @@ p {
 .team_display {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .team_member {
+    display: inline-block;
     margin: 15px 40px 45px;
 }
 
@@ -302,18 +308,28 @@ p {
 /* Footer */
 
 footer {
+    position: relative;
     height: 124px;
     padding: 0 40px;
     background: #3F3D56;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .copyright {
+    position: absolute;
+    top: 53px;
     font-size: 16px;
     color: #FFFFFF;
     opacity: 40%;
+}
+
+.social_bar {
+    position: absolute;
+    top: 48px;
+    right: 30px;
+}
+
+ul.menu_social li {
+    padding: 0 10px;
 }
 
 .social_link {
