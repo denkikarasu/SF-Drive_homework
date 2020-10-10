@@ -88,6 +88,32 @@
 }
 
 
+/* Icons */
+
+@font-face {
+    font-family: 'social_icons';
+    src: url('../fonts/social_icons.eot');
+    src: url('../fonts/social_icons.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/social_icons.woff') format('woff'),
+         url('../fonts/social_icons.ttf') format('truetype'),
+         url('../fonts/social_icons.svg#social_icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'social_icons';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.icon-vk:before{content:'\0041';}
+.icon-instagram:before{content:'\0042';}
+.icon-facebook:before{content:'\0043';}
+
+
 /* Body */
 
 body {
@@ -106,7 +132,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
+    background: #FFFFFF;
 }
 
 .logo_link {
@@ -139,7 +165,7 @@ ul.menu li {
 .button_login {
     margin-left: 25px;
     padding: 12px 30px;
-    background-color: white;
+    background-color: #FFFFFF;
     border: 1px solid rgba(27, 27, 27, 0.4);
     border-radius: 6px;
     font-size: 16px;
@@ -288,4 +314,13 @@ footer {
     font-size: 16px;
     color: #FFFFFF;
     opacity: 40%;
+}
+
+.social_link {
+    color: #FFFFFF;
+    font-size: 26px;
+}
+
+.social_link:hover {
+    color: #88a6c3;
 }
