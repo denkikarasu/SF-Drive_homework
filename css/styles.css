@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Robotothin.woff2") format("woff2"), url("../fonts/Robotothin.woff") format("woff"), url("../fonts/Robotothin.ttf") format("truetype");
@@ -85,31 +87,29 @@
     font-style: normal;
 }
 
+
+/* Body */
+
 body {
+    margin: 0;
     font-family: "Roboto";
-    margin: 40px;
+    font-size: 24px;
+    color: #1B1B1B;
 }
+
+
+/* Header */
 
 header {
+    height: 90px;
+    padding: 0px 40px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-}
-
-main {
-    text-align: center;
-}
-
-footer {
-    background: #3F3D56;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding: 40px;
+    background: white;
 }
 
 .logo_link {
-    color: #1B1B1B;
     font-family: "Rubik";
     text-decoration: none;
     font-size: 24px;
@@ -118,102 +118,174 @@ footer {
 
 .navbar {
     display: flex;
-    align-items: baseline;    
+    align-items: center;    
+}
+
+ul {
+    margin: 0;
 }
 
 ul.menu li {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    padding: 0 15px;
 }
 
 .navbar_link {
-    margin: 5px 15px;
     font-size: 16px;
     text-decoration: none;
-    color: #1B1B1B;
 }
 
 .button_login {
-    font-size: 16px;
-    margin-left: 40px;
-    padding: 5px 15px;
+    margin-left: 25px;
+    padding: 12px 30px;
     background-color: white;
-    border-color: #1B1B1B;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    opacity: 40%;
+    border: 1px solid rgba(27, 27, 27, 0.4);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-#about {
-    padding: 80px;
+.logo_link, .navbar_link, .button_login {
+    color: #1B1B1B;
+    transition: 0.3s;
+}
+
+.logo_link:hover, .navbar_link:hover {
+    color: #88a6c3;
+    /* text-shadow: 2px 2px 5px rgb(136, 166, 195, 0.2); */
+}
+
+.button_login:hover {
+    color: #88a6c3;
+    box-shadow: 2px 2px 5px rgb(136, 166, 195, 0.2);
+    border-color: rgb(136, 166, 195, 0.4);
+    transform: scale(1.02);
+}
+
+
+/* Main */
+
+main {
+    text-align: center;
 }
 
 h1 {
-    margin-top: 60px;
+    margin: 60px auto 30px;
     font-size: 64px;
-}
-
-.text_main {
-    font-size: 24px;
-    width: 70%;
-    margin: auto;
 }
 
 h2 {
     font-size: 48px;
+    margin: 60px auto 40px;
 }
 
-#contacts {
+p {
+    margin: 0;
+}
+
+/* About */
+
+.about {
+    padding: 80px 40px;
+}
+
+.text_main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* Contacts */
+
+.contacts {
+    padding: 20px 40px 100px;
     background: #F7F9FB;
-    padding: 80px;
 }
 
 .contact_details {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
 }
 
 .contacts_item {
-    margin: 40px 70px;
+    margin: 0px 70px;
+    width: 264px;
+    min-width: 200px;
+}
+
+.vertical_separator {
+    width: 1px;
+    min-width: 1px;
+    height: 62px;
+    background: #C8C8CF;
 }
 
 .contact_type {
     color: #4F4F4F;
     font-size: 14px;
+    line-height: 21px;
 }
 
 .contact_info {
     color: #000000;
     font-size: 20px;
+    margin-top: 6px;
+    line-height: 29px;
 }
 
+
+/* Team */
+
 .team {
+    padding: 20px 0 75px;
+}
+
+.team_display {
     width: 80%;
-    margin: 80px auto 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team_member {
-    display: inline-block;
-    margin: 50px 40px 5px;
-    text-align: center;
+    margin: 15px 40px 45px;
 }
 
 .team_photo {
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .name {
     font-size: 20px;
+    line-height: 29px;
+    margin-top: 23px;
 }
 
 .role {
     font-size: 14px;
+    line-height: 21px;
     color: #828282;
+    margin-top: 8px;
+}
+
+
+/* Footer */
+
+footer {
+    height: 124px;
+    padding: 0 40px;
+    background: #3F3D56;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .copyright {
+    font-size: 16px;
     color: #FFFFFF;
     opacity: 40%;
 }
