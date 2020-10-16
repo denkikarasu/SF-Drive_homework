@@ -73,7 +73,7 @@
     font-style: italic;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Rubik";
     src: url("../fonts/Rubik.woff2") format("woff2"), url("../fonts/Rubik.woff") format("woff"), url("../fonts/Rubik.ttf") format("truetype");
     font-weight: 400;
@@ -85,7 +85,7 @@
     src: url("../fonts/Rubikbold.woff2") format("woff2"), url("../fonts/Rubikbold.woff") format("woff"), url("../fonts/Rubikbold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
-}
+} */
 
 
 /* Icons */
@@ -118,7 +118,7 @@
 
 body {
     margin: 0;
-    font-family: "Roboto";
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 24px;
     color: #1B1B1B;
 }
@@ -137,6 +137,19 @@ h2 {
     margin: 60px auto 40px;
 }
 
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
 
 /* Header */
 
@@ -149,16 +162,43 @@ header {
     background: #FFFFFF;
 }
 
-.logo_link {
+@media screen and (max-width: 375px) {
+    header {
+        padding: 0px 20px;
+    }
+}
+
+/* .logo_link {
     font-family: "Rubik";
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
-}
+} */
 
 .navbar {
     display: flex;
     align-items: center;    
+}
+
+.menu_burger {
+    display: block;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 0;
+}
+
+@media screen and (min-width: 375px) {
+    .menu_burger {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .navbar {
+      display: none;
+    }
 }
 
 ul.menu li {
@@ -214,9 +254,28 @@ main {
     padding: 80px 40px;
 }
 
+.top_image {
+    max-width: 70%;
+}
+
 .text_main {
     width: 70%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+    .about {
+        padding: 0;
+    }
+
+    .top_image {
+        width: 70%;
+    }
+
+    .text_main {
+        width: 90%;
+        padding: 20px;
+    }
 }
 
 
@@ -324,4 +383,5 @@ ul.menu_social li {
 
 .social_link:hover {
     color: #88a6c3;
+    font-size: 28px;
 }
