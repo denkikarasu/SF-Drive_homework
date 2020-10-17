@@ -253,9 +253,9 @@ main {
 }
 
 
-/* About */
+/* top_section */
 
-.about {
+.top_section {
     padding: 80px 40px;
 }
 
@@ -263,13 +263,13 @@ main {
     max-width: 70%;
 }
 
-.text_main {
+.top_text {
     width: 70%;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 700px) {
-    .about {
+    .top_section {
         padding: 40px 20px;
     }
 
@@ -277,14 +277,14 @@ main {
         max-width: 78%;
     }
 
-    .text_main {
+    .top_text {
         width: 95%;
         line-height: 23px;
     }
 }
 
-
-/* Contacts */
+/* О НАС */
+/* contacts */
 
 .contacts {
     padding: 10px 40px 100px;
@@ -349,7 +349,7 @@ main {
 }
 
 
-/* Team */
+/* team */
 
 .team {
     padding: 20px 0 75px;
@@ -410,6 +410,66 @@ main {
     .role {
         font-size: 12px;
         margin-top: 5px;
+    }
+}
+
+
+/* ЧАСТЫЕ ВОПРОСЫ */
+
+.faq {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 0 120px;
+}
+
+.collapsible {
+    background-color: #F7F7F8;
+    cursor: pointer;
+    height: 66px;
+    margin: 7px auto;
+    padding: 0 22px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+  
+
+.collapsible:hover {
+    background-color: rgb(97,161,153,0.1);
+}
+
+button.active {
+    background-color: rgb(97,161,153,0.15);
+    color: #61A199;
+
+    )
+
+}
+
+.collapsible_content {
+    padding: 0 22px;
+    margin: 20px auto 40px;
+    display: none;
+    overflow: hidden;
+    font-size: 20px;
+    text-align: left;
+}
+
+div.active {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .collapsible {
+        font-size: 14px;
+        min-height: 50px;
+    }
+
+    .collapsible_content {
+        font-size: 14px;
     }
 }
 
