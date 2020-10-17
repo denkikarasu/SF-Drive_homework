@@ -128,8 +128,8 @@ ul, p {
 }
 
 h1 {
-    margin: 60px auto 30px;
     font-size: 64px;
+    margin: 60px auto 30px;
 }
 
 h2 {
@@ -137,17 +137,20 @@ h2 {
     margin: 60px auto 40px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
     body {
         font-size: 16px;
     }
 
     h1 {
+        margin: 40px auto 10px;
         font-size: 32px;
     }
 
     h2 {
         font-size: 24px;
+        margin: 30px auto 10px;
+
     }
 }
 
@@ -162,8 +165,9 @@ header {
     background: #FFFFFF;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
     header {
+        height: 68px;
         padding: 0px 20px;
     }
 }
@@ -181,23 +185,20 @@ header {
 }
 
 .menu_burger {
-    display: block;
-    cursor: pointer;
-    background-color: #FFFFFF;
-    border: none;
-    margin: 0;
+    display: none;
 }
 
-@media screen and (min-width: 375px) {
-    .menu_burger {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
     .navbar {
       display: none;
+    }
+
+    .menu_burger {
+        display: block;
+        cursor: pointer;
+        background-color: #FFFFFF;
+        border: none;
+        margin: 0;
     }
 }
 
@@ -263,9 +264,9 @@ main {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
     .about {
-        padding: 0;
+        padding: 60px 20px 40px;
     }
 
     .top_image {
@@ -274,7 +275,6 @@ main {
 
     .text_main {
         width: 90%;
-        padding: 20px;
     }
 }
 
@@ -294,7 +294,7 @@ main {
 
 .contacts_item {
     margin: 0px 70px;
-    width: 264px;
+    width: 264px; 
     min-width: 200px;
 }
 
@@ -316,6 +316,23 @@ main {
     font-size: 20px;
     margin-top: 6px;
     line-height: 29px;
+}
+
+@media screen and (max-width: 700px) {
+    .contacts {
+        padding: 10px 20px 30px;
+    }
+
+    .contact_details {
+        flex-wrap: wrap;
+    }
+
+    .contacts_item {
+        margin: 10px;
+    }
+    .vertical_separator {
+        display: none;
+    }
 }
 
 
@@ -343,15 +360,42 @@ main {
 
 .name {
     font-size: 20px;
-    line-height: 29px;
     margin-top: 23px;
 }
 
 .role {
     font-size: 14px;
-    line-height: 21px;
     color: #828282;
     margin-top: 8px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .team {
+        padding: 10px;
+    }
+
+    .team_display {
+        width: 90%;
+    }
+
+    .team_member {
+        margin: 20px 40px 10px;
+    }
+
+    .team_photo {
+        width: 80px;
+    }
+
+    .name {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+    .role {
+        font-size: 12px;
+        margin-top: 2px;
+    }
 }
 
 
@@ -384,4 +428,22 @@ ul.menu_social li {
 .social_link:hover {
     color: #88a6c3;
     font-size: 28px;
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        height: 65px;
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .menu_social {
+        padding: 0;
+    }
+
+    ul.menu_social li {
+        padding: 0 16px 0 0;
+    }
 }
