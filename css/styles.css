@@ -365,7 +365,7 @@ main {
 
 .team_member {
     margin: 15px 40px 45px;
-    width: 15%;
+    /* width: 15%; */
 }
 
 .team_photo {
