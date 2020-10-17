@@ -168,7 +168,7 @@ header {
 @media screen and (max-width: 700px) {
     header {
         height: 68px;
-        padding: 0px 20px;
+        padding: 0px 18px;
     }
 }
 
@@ -189,6 +189,10 @@ header {
 }
 
 @media screen and (max-width: 700px) {
+    .logo_link {
+        margin-left: 5px;
+    }
+
     .navbar {
       display: none;
     }
@@ -266,15 +270,16 @@ main {
 
 @media screen and (max-width: 700px) {
     .about {
-        padding: 60px 20px 40px;
+        padding: 40px 20px;
     }
 
     .top_image {
-        width: 70%;
+        max-width: 78%;
     }
 
     .text_main {
-        width: 90%;
+        width: 95%;
+        line-height: 23px;
     }
 }
 
@@ -282,7 +287,7 @@ main {
 /* Contacts */
 
 .contacts {
-    padding: 20px 40px 100px;
+    padding: 10px 40px 100px;
     background: #F7F9FB;
 }
 
@@ -308,19 +313,17 @@ main {
 .contact_type {
     color: #4F4F4F;
     font-size: 14px;
-    line-height: 21px;
 }
 
 .contact_info {
     color: #000000;
     font-size: 20px;
     margin-top: 6px;
-    line-height: 29px;
 }
 
 @media screen and (max-width: 700px) {
     .contacts {
-        padding: 10px 20px 30px;
+        padding: 15px 20px 30px;
     }
 
     .contact_details {
@@ -330,8 +333,18 @@ main {
     .contacts_item {
         margin: 10px;
     }
+    
     .vertical_separator {
         display: none;
+    }
+
+    .contact_type {
+        font-size: 12px;
+    }
+    
+    .contact_info {
+        margin-top: 10px;
+        font-size: 14px;
     }
 }
 
@@ -352,6 +365,7 @@ main {
 
 .team_member {
     margin: 15px 40px 45px;
+    width: 15%;
 }
 
 .team_photo {
@@ -372,15 +386,16 @@ main {
 @media screen and (max-width: 700px) {
 
     .team {
-        padding: 10px;
+        padding: 15px 15px 55px;
     }
 
     .team_display {
-        width: 90%;
+        width: 100%;
     }
 
     .team_member {
-        margin: 20px 40px 10px;
+        margin: 20px 5px 10px;
+        width: 45%;
     }
 
     .team_photo {
@@ -394,7 +409,7 @@ main {
     
     .role {
         font-size: 12px;
-        margin-top: 2px;
+        margin-top: 5px;
     }
 }
 
@@ -433,7 +448,7 @@ ul.menu_social li {
 @media screen and (max-width: 700px) {
     footer {
         height: 65px;
-        padding: 30px 20px;
+        padding: 30px 25px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
