@@ -264,6 +264,11 @@ main {
     max-width: 70%;
 }
 
+.faq.top_image {
+    max-width: 72%;
+    margin-bottom: -5px;
+}
+
 .top_text {
     width: 70%;
     margin: 0 auto;
@@ -274,6 +279,10 @@ main {
         padding: 40px 20px;
     }
 
+    .faq.top_section {
+        padding: 40px 20px 23px;
+    }
+
     .top_image {
         max-width: 78%;
     }
@@ -281,6 +290,10 @@ main {
     .top_text {
         width: 95%;
         line-height: 23px;
+    }
+
+    .faq.top_text {
+        width: 98%;
     }
 }
 
@@ -421,6 +434,8 @@ main {
     width: 70%;
     margin: 0 auto;
     padding: 0 0 120px;
+    font-size: 20px;
+    text-align: left;
 }
 
 .collapsible {
@@ -435,8 +450,6 @@ main {
     padding: 18px 72px 18px 22px;
     border: none;
     border-radius: 6px;
-    text-align: left;
-    font-size: 20px;
 }
 
 .collapsible a:hover {
@@ -455,8 +468,6 @@ main {
 .inner_content {
     padding: 0 22px;
     margin: 20px auto 40px;
-    font-size: 20px;
-    text-align: left;
 }
 
 .content {
@@ -481,18 +492,26 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-    .collapsible a {
+    .collapsible_wrapper {
+        width: 90%;
+        padding: 0 0 43px;
         font-size: 14px;
+        line-height: 22px;
+    }
+
+    .collapsible a {
+        min-height: 22px;
+        padding: 14px 88px 14px 22px;
     }
 
     .collapsible_icon {
         font-size: 12px;
-        top: 22px;
-        right: 22px;
+        top: 18px;
+        right: 20px;
     }
 
     .inner_content {
-        font-size: 14px;
+        margin: 7px auto 23px;
     }
 }
 
