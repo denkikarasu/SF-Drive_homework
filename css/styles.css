@@ -430,9 +430,9 @@ main {
 .collapsible a {
     display: block;
     background-color: #F7F7F8;
-    min-height: 48px;
+    min-height: 20px;
     margin: 7px auto;
-    padding: 18px 72px 0px 22px;
+    padding: 18px 72px 18px 22px;
     border: none;
     border-radius: 6px;
     text-align: left;
@@ -445,7 +445,7 @@ main {
 
 .collapsible_icon {
     position: absolute;
-    top: 28px;
+    top: 24px;
     right: 28px;
     font-size: 16px;
     color: #A0A7AD;
@@ -477,7 +477,7 @@ main {
 .collapsible:target .collapsible_icon {
     transform: rotate(180deg);
     color: #61A199;
-    top: 22px;
+    top: 18px;
 }
 
 @media screen and (max-width: 700px) {
@@ -488,6 +488,7 @@ main {
     .collapsible_icon {
         font-size: 12px;
         top: 22px;
+        right: 22px;
     }
 
     .inner_content {
