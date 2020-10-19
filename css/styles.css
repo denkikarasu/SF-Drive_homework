@@ -114,7 +114,7 @@
 .icon-facebook:before{content:'\0043';}
 
 
-/* Body */
+/* BODY */
 
 body {
     margin: 0;
@@ -123,8 +123,9 @@ body {
     color: #1B1B1B;
 }
 
-ul, p {
+ul, p, a {
     margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -154,7 +155,7 @@ h2 {
     }
 }
 
-/* Header */
+/* HEADER */
 
 header {
     height: 90px;
@@ -171,13 +172,6 @@ header {
         padding: 0px 18px;
     }
 }
-
-/* .logo_link {
-    font-family: "Rubik";
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 700;
-} */
 
 .navbar {
     display: flex;
@@ -235,7 +229,6 @@ ul.menu li {
 
 .logo_link:hover, .navbar_link:hover {
     color: #88a6c3;
-    /* text-shadow: 2px 2px 5px rgb(136, 166, 195, 0.2); */
 }
 
 .button_login:hover {
@@ -246,7 +239,7 @@ ul.menu li {
 }
 
 
-/* Main */
+/* MAIN */
 
 main {
     text-align: center;
@@ -283,7 +276,7 @@ main {
     }
 }
 
-/* О НАС */
+/* ABOUT US */
 /* contacts */
 
 .contacts {
@@ -414,61 +407,75 @@ main {
 }
 
 
-/* ЧАСТЫЕ ВОПРОСЫ */
+/* FAQ */
 
-.faq {
+.collapsible_wrapper {
     width: 70%;
     margin: 0 auto;
     padding: 0 0 120px;
 }
 
 .collapsible {
+    position: relative;
+}
+
+.collapsible a {
+    display: block;
     background-color: #F7F7F8;
-    cursor: pointer;
-    height: 66px;
+    min-height: 48px;
     margin: 7px auto;
-    padding: 0 22px;
-    width: 100%;
+    padding: 18px 72px 0px 22px;
     border: none;
     border-radius: 6px;
     text-align: left;
     font-size: 20px;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #1B1B1B;
 }
-  
 
-.collapsible:hover {
+.collapsible a:hover {
     background-color: rgb(97,161,153,0.1);
 }
 
-button.active {
-    background-color: rgb(97,161,153,0.15);
-    color: #61A199;
-
-    )
-
+.collapsible_icon {
+    position: absolute;
+    top: 18px;
+    right: 28px;
 }
 
-.collapsible_content {
+.inner_content {
     padding: 0 22px;
     margin: 20px auto 40px;
-    display: none;
-    overflow: hidden;
     font-size: 20px;
     text-align: left;
 }
 
-div.active {
-    display: block;
+.content {
+    max-height: 0;
+    transition: 0.3s linear 0s;
+    overflow: hidden;
+}
+
+.collapsible:target a {
+    background-color: rgb(97,161,153,0.15);
+    color: #61A199;
+}
+
+.collapsible:target .content {
+    max-height: 900px;
+}
+
+.collapsible:target .collapsible_icon {
+    transform: rotate(180deg);
+    color: #61A199;
 }
 
 @media screen and (max-width: 700px) {
-    .collapsible {
+    .collapsible a {
         font-size: 14px;
-        min-height: 50px;
     }
 
-    .collapsible_content {
+    .inner_content {
         font-size: 14px;
     }
 }
