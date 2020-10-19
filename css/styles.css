@@ -109,9 +109,12 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale
 }
-.icon-vk:before{content:'\0041';}
+.icon-facebook:before{content:'\0041';}
 .icon-instagram:before{content:'\0042';}
-.icon-facebook:before{content:'\0043';}
+.icon-vk:before{content:'\0043';}
+.icon-menu_icon:before{content:'\0044';}
+.icon-chevron-down:before{content:'\0045';}
+.icon-chevron-up:before{content:'\0046';}
 
 
 /* BODY */
@@ -123,10 +126,15 @@ body {
     color: #1B1B1B;
 }
 
-ul, p, a {
+* {
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    }
 
 h1 {
     font-size: 64px;
@@ -429,8 +437,6 @@ main {
     border-radius: 6px;
     text-align: left;
     font-size: 20px;
-    text-decoration: none;
-    color: #1B1B1B;
 }
 
 .collapsible a:hover {
@@ -439,8 +445,11 @@ main {
 
 .collapsible_icon {
     position: absolute;
-    top: 18px;
+    top: 28px;
     right: 28px;
+    font-size: 16px;
+    color: #A0A7AD;
+    cursor: pointer;
 }
 
 .inner_content {
@@ -468,11 +477,17 @@ main {
 .collapsible:target .collapsible_icon {
     transform: rotate(180deg);
     color: #61A199;
+    top: 22px;
 }
 
 @media screen and (max-width: 700px) {
     .collapsible a {
         font-size: 14px;
+    }
+
+    .collapsible_icon {
+        font-size: 12px;
+        top: 22px;
     }
 
     .inner_content {
