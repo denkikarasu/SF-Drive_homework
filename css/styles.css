@@ -272,6 +272,7 @@ main {
 .top_text {
     width: 70%;
     margin: 0 auto;
+    line-height: 35px;
 }
 
 @media screen and (max-width: 700px) {
@@ -289,7 +290,7 @@ main {
 
     .top_text {
         width: 95%;
-        line-height: 23px;
+        line-height: 24px;
     }
 
     .faq.top_text {
@@ -301,7 +302,7 @@ main {
 /* contacts */
 
 .contacts {
-    padding: 10px 40px 100px;
+    padding: 15px 40px 100px;
     background: #F7F9FB;
 }
 
@@ -332,7 +333,7 @@ main {
 .contact_info {
     color: #000000;
     font-size: 20px;
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -366,7 +367,7 @@ main {
 /* team */
 
 .team {
-    padding: 20px 0 75px;
+    padding: 22px 0 75px;
 }
 
 .team_display {
@@ -394,7 +395,7 @@ main {
 .role {
     font-size: 14px;
     color: #828282;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 @media screen and (max-width: 700px) {
