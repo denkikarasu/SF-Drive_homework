@@ -443,12 +443,14 @@ main {
     text-align: left;
 }
 
+
 .collapsible {
     position: relative;
-}
-
-.collapsible a {
+    cursor: pointer;
     display: block;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
     background-color: #F7F7F8;
     min-height: 20px;
     margin: 7px auto 8px;
@@ -457,9 +459,16 @@ main {
     border-radius: 6px;
 }
 
-.collapsible a:hover {
+.collapsible:hover {
     background-color: rgb(97,161,153,0.1);
 }
+
+.active, .active:hover {
+    background-color: rgb(97,161,153,0.15);
+    color: #61A199;
+    font-weight: 500;
+}
+
 
 .collapsible_icon {
     position: absolute;
@@ -470,44 +479,35 @@ main {
     cursor: pointer;
 }
 
-.inner_content {
-    padding: 0 22px;
-    margin: 20px auto 40px;
-}
-
-.content {
-    max-height: 0;
-    transition: 0.3s linear 0s;
-    overflow: hidden;
-}
-
-.collapsible:target a {
-    background-color: rgb(97,161,153,0.15);
-    color: #61A199;
-    font-weight: 500;
-}
-
-.collapsible:target .content {
-    max-height: 900px;
-}
-
-.collapsible:target .collapsible_icon {
+.active .collapsible_icon {
     transform: rotate(180deg);
     color: #61A199;
     top: 18px;
+}
+
+.content {
+    padding: 0 22px;
+    margin: 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.open {
+    margin: 20px auto 40px;
 }
 
 @media screen and (max-width: 700px) {
     .collapsible_wrapper {
         width: 90%;
         padding: 0 0 42px;
-        font-size: 14px;
-        line-height: 22px;
     }
 
-    .collapsible a {
-        min-height: 22px;
+    .collapsible {
+        /* min-height: 22px; */
         padding: 14px 88px 14px 22px;
+        font-size: 14px;
+        line-height: 21px;
     }
 
     .collapsible_icon {
@@ -516,8 +516,14 @@ main {
         right: 20px;
     }
 
-    .inner_content {
-        margin: 7px auto 23px;
+    .content {
+        margin: 7px auto;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .open {
+        margin: 15px auto 30px;
     }
 }
 
