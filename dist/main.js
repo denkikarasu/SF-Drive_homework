@@ -1,1 +1,0 @@
-window.onload=function(){let e,t=document.getElementsByClassName("collapsible");for(e=0;e<t.length;e++)t.item(e).addEventListener("click",(function(){console.log(this),this.classList.toggle("active");let e=this.nextElementSibling;e.classList.toggle("open"),e.style.maxHeight?e.style.maxHeight=null:e.style.maxHeight=e.scrollHeight+"px"}))};
