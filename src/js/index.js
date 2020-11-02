@@ -1,2 +1,2 @@
-import '../css/styles.css';
-import * from 'collapsible.js';
+// import "../css/styles.css";
+import "./collapsible.js";

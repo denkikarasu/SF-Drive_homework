@@ -9,14 +9,15 @@ module.exports = {
     module: {
         rules: [ 
             { 
-                test: /\.css$/,
-                use: [ {
-                    loader: MiniCssExtractPlugin.loader,
-                    options: {
-                        esModule: true,
+                test: /\.css$/i,
+                use: [ 
+                    {   loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            esModule: true,
+                        },
                     },
-                },
-                'css-loader']
+                    'css-loader'
+                ]
             }
         ]
     }
