@@ -1,80 +1,73 @@
 header {
     height: 90px;
     padding: 0px 40px;
+    color: $basic_black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: $basic_white;
+
+    .navbar {
+        display: flex;
+        align-items: center;  
+        
+        .navbar_link {
+            font-size: 16px;
+            text-decoration: none;
+
+            &:hover {
+                color: $active_font;
+                transition: 0.2s;
+            }
+        }
+
+        .button_login {
+            margin-left: 25px;
+            padding: 12px 30px;
+            color: $basic_black;
+            background-color: $basic_white;
+            border: $basic_border;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+                color: $active_font;
+                box-shadow: $hover_shadow;
+                border-color: $hover_border;
+                transform: scale(1.02);
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .menu_burger {
+        display: none;
+    }
 }
 
 @include breakpoint {
     header {
         height: 68px;
         padding: 0px 18px;
+
+        .logo_link {
+            margin-left: 5px;
+        }
+
+        .navbar {
+            display: none;
+        }
+      
+        .menu_burger {
+            display: block;
+            cursor: pointer;
+            background-color: $basic_white;
+            border: none;
+            margin: 0;
+        }
+        
     }
 }
 
-.navbar {
-    display: flex;
-    align-items: center;    
-}
-
-.menu_burger {
-    display: none;
-}
-
-@include breakpoint {
-    .logo_link {
-        margin-left: 5px;
-    }
-
-    .navbar {
-      display: none;
-    }
-
-    .menu_burger {
-        display: block;
-        cursor: pointer;
-        background-color: $basic_white;
-        border: none;
-        margin: 0;
-    }
-}
-
-ul.menu li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0 15px;
-}
-
-.navbar_link {
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.button_login {
-    margin-left: 25px;
-    padding: 12px 30px;
-    background-color: $basic_white;
-    border: $basic_border;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.logo_link, .navbar_link, .button_login {
-    color: $basic_black;
-    transition: 0.3s;
-}
-
-.logo_link:hover, .navbar_link:hover {
-    color: $active_font;
-}
-
-.button_login:hover {
-    color: $active_font;
-    box-shadow: $hover_shadow;
-    border-color: $hover_border;
-    transform: scale(1.02);
-}

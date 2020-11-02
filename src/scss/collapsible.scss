@@ -6,88 +6,89 @@
     padding: 0 0 112px;
     font-size: 20px;
     text-align: left;
+
+    .collapsible {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+        background-color: $collapsible_background;
+        min-height: 20px;
+        margin: 7px auto 8px;
+        padding: 20px 72px 20px 22px;
+        border: none;
+        border-radius: 6px;
+
+        .collapsible_icon {
+            position: absolute;
+            top: 24px;
+            right: 28px;
+            font-size: 16px;
+            color: $collapsible_icon;
+            cursor: pointer;
+        }
+
+        &:hover {
+            background-color: $hover_background;
+        }
+
+        &.active {
+            background-color: $active_background;
+            color: $active_font;
+            font-weight: 500;
+
+            .collapsible_icon {
+                transform: rotate(180deg);
+                color: $active_font;
+                top: 18px;
+            }
+        }
+
+
+    }
+
+    .content {
+        padding: 0 22px;
+        margin: 0px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+
+        &.open {
+            margin: 20px auto 40px;
+        }
+    }
+
 }
 
-
-.collapsible {
-    position: relative;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    text-align: left;
-    background-color: $collapsible_background;
-    min-height: 20px;
-    margin: 7px auto 8px;
-    padding: 20px 72px 20px 22px;
-    border: none;
-    border-radius: 6px;
-}
-
-.collapsible:hover {
-    background-color: $hover_background;
-}
-
-.active, .active:hover {
-    background-color: $active_background;
-    color: $active_font;
-    font-weight: 500;
-}
-
-
-.collapsible_icon {
-    position: absolute;
-    top: 24px;
-    right: 28px;
-    font-size: 16px;
-    color: $collapsible_icon;
-    cursor: pointer;
-}
-
-.active .collapsible_icon {
-    transform: rotate(180deg);
-    color: $active_font;
-    top: 18px;
-}
-
-.content {
-    padding: 0 22px;
-    margin: 0px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.open {
-    margin: 20px auto 40px;
-}
 
 @include breakpoint {
     .collapsible_wrapper {
         width: 90%;
         padding: 0 0 42px;
-    }
 
-    .collapsible {
-        /* min-height: 22px; */
-        padding: 14px 88px 14px 22px;
-        font-size: 14px;
-        line-height: 21px;
-    }
+        .collapsible {
+            padding: 14px 88px 14px 22px;
+            font-size: 14px;
+            line-height: 21px;
 
-    .collapsible_icon {
-        font-size: 12px;
-        top: 18px;
-        right: 20px;
-    }
+            .collapsible_icon {
+                font-size: 12px;
+                top: 18px;
+                right: 20px;
+            }
+        }
 
-    .content {
-        margin: 7px auto;
-        font-size: 14px;
-        line-height: 21px;
-    }
+        .content {
+            margin: 7px auto;
+            font-size: 14px;
+            line-height: 21px;
 
-    .open {
-        margin: 15px auto 30px;
+            &.open {
+                margin: 15px auto 30px;
+            }
+        }
     }
 }

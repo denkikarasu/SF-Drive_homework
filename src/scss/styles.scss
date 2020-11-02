@@ -10,119 +10,121 @@
 
 main {
     text-align: center;
+
+    .top_section {
+        padding: 80px 40px;
+
+        .top_image {
+            max-width: 70%;
+        }
+    }
+
+    .top_text {
+        width: 70%;
+        margin: 0 auto;
+        line-height: 35px;
+    }
+}
+
+.faq {
+    .top_section {
+        padding: 80px 40px 53px;
+
+        .top_image {
+            max-width: 72%;
+            margin-bottom: -5px;
+        }
+    }
 }
 
 
-/* top_section */
 
-.top_section {
-    padding: 80px 40px;
-}
 
-.faq.top_section {
-    padding: 80px 40px 53px;
-}
-
-.top_image {
-    max-width: 70%;
-}
-
-.faq.top_image {
-    max-width: 72%;
-    margin-bottom: -5px;
-}
-
-.top_text {
-    width: 70%;
-    margin: 0 auto;
-    line-height: 35px;
-}
 
 @include breakpoint {
     .top_section {
         padding: 40px 20px;
+
+        .top_image {
+            max-width: 78%;
+        }
+
+        .top_text {
+            width: 95%;
+            line-height: 24px;
+        }
     }
 
-    .faq.top_section {
-        padding: 40px 20px 23px;
-    }
+    .faq {
+        .top_section {
+            padding: 40px 20px 23px;
 
-    .top_image {
-        max-width: 78%;
-    }
-
-    .top_text {
-        width: 95%;
-        line-height: 24px;
-    }
-
-    .faq.top_text {
-        width: 98%;
+            .top_text {
+                width: 98%;
+            }
+        }
     }
 }
-
-/* ABOUT US */
-/* contacts */
 
 .contacts {
     padding: 15px 40px 100px;
     background: $background_lightblue;
-}
 
-.contact_details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .contact_details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-.contacts_item {
-    margin: 0px 70px;
-    width: 264px; 
-    min-width: 200px;
-}
+        .contacts_item {
+            margin: 0px 70px;
+            width: 264px; 
+            min-width: 200px;
 
-.vertical_separator {
-    width: 1px;
-    min-width: 1px;
-    height: 62px;
-    background: $line_grey;
-}
+            .contact_type {
+                color: $basic_grey;
+                font-size: 14px;
+            }
 
-.contact_type {
-    color: $basic_grey;
-    font-size: 14px;
-}
+            .contact_info {
+                color: $basic_black;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
 
-.contact_info {
-    color: $basic_black;
-    font-size: 20px;
-    margin-top: 10px;
+        .vertical_separator {
+            width: 1px;
+            min-width: 1px;
+            height: 62px;
+            background: $line_grey;
+        }
+    }
 }
 
 @include breakpoint {
     .contacts {
         padding: 15px 20px 30px;
-    }
 
-    .contact_details {
-        flex-wrap: wrap;
-    }
+        .contact_details {
+            flex-wrap: wrap;
 
-    .contacts_item {
-        margin: 10px;
-    }
-    
-    .vertical_separator {
-        display: none;
-    }
+            .contacts_item {
+                margin: 10px;
 
-    .contact_type {
-        font-size: 12px;
-    }
-    
-    .contact_info {
-        margin-top: 10px;
-        font-size: 14px;
+                .contact_type {
+                    font-size: 12px;
+                }
+                
+                .contact_info {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
+            
+            .vertical_separator {
+                display: none;
+            }
+        }
     }
 }
 
@@ -131,62 +133,62 @@ main {
 
 .team {
     padding: 22px 0 75px;
-}
 
-.team_display {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team_member {
-    margin: 15px 40px 45px;
-    /* width: 15%; */
-}
-
-.team_photo {
-    border-radius: 50%;
-}
-
-.name {
-    font-size: 20px;
-    margin-top: 23px;
-}
-
-.role {
-    font-size: 14px;
-    color: $role_grey;
-    margin-top: 12px;
+    .team_display {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .team_member {
+            margin: 15px 40px 45px;
+            
+            .team_photo {
+                border-radius: 50%;
+            }
+    
+            .name {
+                font-size: 20px;
+                margin-top: 23px;
+            }
+            
+            .role {
+                font-size: 14px;
+                color: $role_grey;
+                margin-top: 12px;
+            }
+    
+        }
+    }
 }
 
 @include breakpoint {
 
     .team {
         padding: 15px 15px 55px;
-    }
 
-    .team_display {
-        width: 100%;
-    }
+        .team_display {
+            width: 100%;
 
-    .team_member {
-        margin: 20px 5px 10px;
-        width: 45%;
-    }
+            .team_member {
+                margin: 20px 5px 10px;
+                width: 45%;
 
-    .team_photo {
-        width: 80px;
-    }
-
-    .name {
-        font-size: 16px;
-        margin-top: 15px;
-    }
-    
-    .role {
-        font-size: 12px;
-        margin-top: 5px;
+                .team_photo {
+                    width: 80px;
+                }
+            
+                .name {
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
+                
+                .role {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
     }
 }

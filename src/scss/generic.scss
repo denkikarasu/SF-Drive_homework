@@ -7,12 +7,11 @@ body {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 24px;
     color: $basic_black;
-}
 
-a {
-    text-decoration: none;
-    color: inherit;
-    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        }
 
     h1 {
         font-size: 64px;
@@ -23,12 +22,19 @@ a {
         font-size: 48px;
         margin: 60px auto 40px;
     }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0 15px;
+    }
+}
+
     
-    @include breakpoint {
-        body {
-            font-size: 16px;
-        }
-    
+@include breakpoint {
+    body {
+        font-size: 16px;
+
         h1 {
             margin: 40px auto 10px;
             font-size: 32px;
@@ -40,3 +46,4 @@ a {
     
         }
     }
+}
