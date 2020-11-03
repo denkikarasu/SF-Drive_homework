@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './src/js/index.js',
+    mode: 'development',
     output: {
         filename: 'main.js'
     },
@@ -9,7 +10,7 @@ module.exports = {
     module: {
         rules: [ 
             { 
-                test: /\.css$/i,
+                test: /\.css$/,
                 use: [ 
                     {   loader: MiniCssExtractPlugin.loader,
                         options: {
