@@ -1,8 +1,14 @@
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+
 /*! exports [not provided] [no usage info] */
 
 /*! namespace exports */
 
+/*! other exports [not provided] [no usage info] */
+
 /*! runtime requirements:  */
+
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
 
 /*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 
@@ -14,10 +20,50 @@
   !*** ./src/js/index.js ***!
   \*************************/
 
+/*!**************************!*\
+  !*** ./src/svg/Logo.svg ***!
+  \**************************/
+
 /*!*******************************!*\
   !*** ./src/js/collapsible.js ***!
+  \*******************************/
+
+/*!*******************************!*\
+  !*** ./src/svg/menu_icon.svg ***!
   \*******************************/
 
 /*!*********************************!*\
   !*** ./src/css/temp_styles.css ***!
   \*********************************/
+
+/*!**********************************!*\
+  !*** ./src/img/about_deyeva.jpg ***!
+  \**********************************/
+
+/*!**********************************!*\
+  !*** ./src/img/about_ivanov.jpg ***!
+  \**********************************/
+
+/*!***********************************!*\
+  !*** ./src/img/about_morozov.jpg ***!
+  \***********************************/
+
+/*!***********************************!*\
+  !*** ./src/img/about_smirnov.jpg ***!
+  \***********************************/
+
+/*!***********************************!*\
+  !*** ./src/img/about_yartsev.jpg ***!
+  \***********************************/
+
+/*!*************************************!*\
+  !*** ./src/img/about_strelkova.jpg ***!
+  \*************************************/
+
+/*!********************************************!*\
+  !*** ./src/svg/undraw_questions_75e01.svg ***!
+  \********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/svg/undraw_team_spirit_hrr41.svg ***!
+  \**********************************************/

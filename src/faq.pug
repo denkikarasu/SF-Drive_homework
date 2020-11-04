@@ -4,14 +4,14 @@ html(lang='ru')
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width')
     // Шрифты подключены отдельным файлом - временное решение для обходы проблемы со сборкой стилей с помощью webpack
-    link(rel='stylesheet' type='text/css' href='src/css/temp_fonts.css')
+    link(rel='stylesheet' type='text/css' href='css/temp_fonts.css')
     link(rel='stylesheet' type='text/css' href='dist/main.css')
     script(src='dist/main.js')
     title Частые вопросы
   body
     header
       a.logo_link(href='index.html' aria-label='Ссылка на главную страницу сервиса SkillDrive')
-        img.logo_img(src='src/svg/Logo.svg' alt='SkillDrive')
+        img.logo_img(src='img/Logo.svg' alt='SkillDrive')
       .navbar
         nav.navbar_menu
           ul
@@ -23,10 +23,10 @@ html(lang='ru')
               a.navbar_link(href='faq.html') Частые вопросы
         button.button_login(onclick='') Войти
       button.menu_burger
-        img.burger_icon(src='src/svg/menu_icon.svg' alt='Menu' aria-label='Открыть меню сайта')
+        img.burger_icon(src='img/menu_icon.svg' alt='Menu' aria-label='Открыть меню сайта')
     main.faq
       section.top_section
-        img.top_image(src='src/svg/undraw_questions_75e01.svg' alt='Иллюстрация - вопросы' aria-hidden='true')
+        img.top_image(src='img/undraw_questions_75e01.svg' alt='Иллюстрация - вопросы' aria-hidden='true')
         h1 Частые вопросы
         p.top_text Отвечаем на вопросы, которые у вас могут возникнуть.
       section.collapsible_wrapper

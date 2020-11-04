@@ -14,15 +14,15 @@ module.exports = {
         new TerserJSPlugin(), 
         new OptimizeCSSAssetsPlugin(),
         new HtmlWebpackPlugin( {
-            template: './src/pug/index.pug',
+            template: './src/index.pug',
             filename: 'index.html',
         }),
         new HtmlWebpackPlugin( {
-            template: './src/pug/about.pug',
+            template: './src/about.pug',
             filename: 'about.html',
         }),
         new HtmlWebpackPlugin( {
-            template: './src/pug/faq.pug',
+            template: './src/faq.pug',
             filename: 'faq.html',
         })
     ],
@@ -34,7 +34,7 @@ module.exports = {
     module: {
         rules: [ 
             { 
-                test: /\.css$/,
+                test: /\.css$/i,
                 use: [ 
                     {   
                         loader: MiniCssExtractPlugin.loader,
@@ -46,12 +46,22 @@ module.exports = {
                 ]
             },
             {
-                test: /\.pug$/,
+                test: /\.pug$/i,
                 use: {
                     loader: 'pug-loader',
                     options: {
                         pretty: true
                     }
+                }
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'img',
+                        name: '[name].[ext]',
+                    },
                 }
             }
         ]

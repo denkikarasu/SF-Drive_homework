@@ -4,13 +4,13 @@ html(lang='ru')
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width')
     // Шрифты подключены отдельным файлом - временное решение для обходы проблемы со сборкой стилей с помощью webpack
-    link(rel='stylesheet' type='text/css' href='src/css/temp_fonts.css')
+    link(rel='stylesheet' type='text/css' href='css/temp_fonts.css')
     link(rel='stylesheet' type='text/css' href='dist/main.css')
     title О нас
   body
     header
       a.logo_link(href='index.html' aria-label='Ссылка на главную страницу сервиса SkillDrive')
-        img.logo_img(src='src/svg/Logo.svg' alt='SkillDrive')
+        img.logo_img(src='img/Logo.svg' alt='SkillDrive')
       .navbar
         nav.navbar_menu
           ul
@@ -22,10 +22,10 @@ html(lang='ru')
               a.navbar_link(href='faq.html') Частые вопросы
         button.button_login(onclick='') Войти
       button.menu_burger
-        img.burger_icon(src='src/svg/menu_icon.svg' alt='Menu' aria-label='Открыть меню сайта')
+        img.burger_icon(src='img/menu_icon.svg' alt='Menu' aria-label='Открыть меню сайта')
     main
       section.top_section
-        img.top_image(src='src/svg/undraw_team_spirit_hrr41.svg' alt='Иллюстрация - команда' aria-hidden='true')
+        img.top_image(src='img/undraw_team_spirit_hrr41.svg' alt='Иллюстрация - команда' aria-hidden='true')
         h1 О нас
         p.top_text
           | Это учебный проект, созданный с целью получения боевого опыта в разработке настоящего живого веб-приложения. Этот сервис имитирует работу каршеринга, в котором можно не только арендовать автомобили, но и сдавать их в аренду.
@@ -43,27 +43,27 @@ html(lang='ru')
         h2 Команда
         .team_display
           .team_member
-            img.team_photo(src='src/img/about_ivanov.jpg' alt='Иван Иванов фото')
+            img.team_photo(src='img/about_ivanov.jpg' alt='Иван Иванов фото')
             p.name Иван Иванов
             p.role CEO
           .team_member
-            img.team_photo(src='src/img/about_smirnov.jpg' alt='Алексей Смирнов фото')
+            img.team_photo(src='img/about_smirnov.jpg' alt='Алексей Смирнов фото')
             p.name Алексей Смирнов
             p.role Frontend-разработчик
           .team_member
-            img.team_photo(src='src/img/about_yartsev.jpg' alt='Денис Ярцев фото')
+            img.team_photo(src='img/about_yartsev.jpg' alt='Денис Ярцев фото')
             p.name Денис Ярцев
             p.role Backend-разработчик
           .team_member
-            img.team_photo(src='src/img/about_morozov.jpg' alt='Николай Морозов фото')
+            img.team_photo(src='img/about_morozov.jpg' alt='Николай Морозов фото')
             p.name Николай Морозов
             p.role Дизайнер
           .team_member
-            img.team_photo(src='src/img/about_deyeva.jpg' alt='Ирина Деева фото')
+            img.team_photo(src='img/about_deyeva.jpg' alt='Ирина Деева фото')
             p.name Ирина Деева
             p.role Копирайтер
           .team_member
-            img.team_photo(src='src/img/about_strelkova.jpg' alt='Мария Стрелкова фото')
+            img.team_photo(src='img/about_strelkova.jpg' alt='Мария Стрелкова фото')
             p.name Мария Стрелкова
             p.role SMM
     footer
