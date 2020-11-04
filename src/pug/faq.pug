@@ -1,0 +1,78 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width')
+    // Шрифты подключены отдельным файлом - временное решение для обходы проблемы со сборкой стилей с помощью webpack
+    link(rel='stylesheet' type='text/css' href='src/css/temp_fonts.css')
+    link(rel='stylesheet' type='text/css' href='dist/main.css')
+    script(src='dist/main.js')
+    title Частые вопросы
+  body
+    header
+      a.logo_link(href='index.html' aria-label='Ссылка на главную страницу сервиса SkillDrive')
+        img.logo_img(src='src/svg/Logo.svg' alt='SkillDrive')
+      .navbar
+        nav.navbar_menu
+          ul
+            li.navbar_item
+              a.navbar_link(href='about.html') О нас
+            li.navbar_item
+              a.navbar_link(href='terms.html') Условия
+            li.navbar_item
+              a.navbar_link(href='faq.html') Частые вопросы
+        button.button_login(onclick='') Войти
+      button.menu_burger
+        img.burger_icon(src='src/svg/menu_icon.svg' alt='Menu' aria-label='Открыть меню сайта')
+    main.faq
+      section.top_section
+        img.top_image(src='src/svg/undraw_questions_75e01.svg' alt='Иллюстрация - вопросы' aria-hidden='true')
+        h1 Частые вопросы
+        p.top_text Отвечаем на вопросы, которые у вас могут возникнуть.
+      section.collapsible_wrapper
+        button.collapsible(type='button')
+          | Могу ли я отменить бронь?
+          span.collapsible_icon.icon-chevron-down
+        .content
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        button.collapsible(type='button')
+          | Могу ли я вернуть деньги, если не подошёл автомобиль?
+          span.collapsible_icon.icon-chevron-down
+        .content
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        button.collapsible(type='button')
+          | Что делать, если случилось ДТП?
+          span.collapsible_icon.icon-chevron-down
+        .content
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        button.collapsible(type='button')
+          | Могу ли я оставить автомобиль в удобном для меня месте?
+          span.collapsible_icon.icon-chevron-down
+        .content
+          p
+            | Данный вопрос обсуждается с собственником, но как правило автомобиль нужно вернуть туда, где вы его получили.
+        button.collapsible(type='button')
+          | Что делать, если собственник просит заплатить ему напрямую?
+          span.collapsible_icon.icon-chevron-down
+        .content
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        button.collapsible(type='button')
+          | Должен ли я заправлять автомобиль?
+          span.collapsible_icon.icon-chevron-down
+        .content
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    footer
+      .copyright © SkillDrive Inc. 2020
+      nav.social_bar
+        ul.menu_social
+          li.social_icon
+            a.social_link.icon-vk(href='https://vk.com' target='_blank' aria-label='Переход на страницу SkillDrive в ВКонтакте')
+          li.social_icon
+            a.social_link.icon-instagram(href='https://instagram.com' target='_blank' aria-label='Переход на страницу SkillDrive в Инстаграм')
+          li.social_icon
+            a.social_link.icon-facebook(href='https://facebook.com' target='_blank' aria-label='Переход на страницу SkillDrive в Фейсбук')

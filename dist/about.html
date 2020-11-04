@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- Шрифты подключены отдельным файлом - временное решение для обходы проблемы со сборкой стилей с помощью webpack-->
+    <link rel="stylesheet" type="text/css" href="src/css/temp_fonts.css">
+    <link rel="stylesheet" type="text/css" href="dist/main.css">
+    <title>О нас</title>
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header><a class="logo_link" href="index.html" aria-label="Ссылка на главную страницу сервиса SkillDrive"><img class="logo_img" src="src/svg/Logo.svg" alt="SkillDrive"></a>
+      <div class="navbar">
+        <nav class="navbar_menu">
+          <ul>
+            <li class="navbar_item"><a class="navbar_link" href="about.html">О нас</a></li>
+            <li class="navbar_item"><a class="navbar_link" href="terms.html">Условия</a></li>
+            <li class="navbar_item"><a class="navbar_link" href="faq.html">Частые вопросы</a></li>
+          </ul>
+        </nav>
+        <button class="button_login" onclick="">Войти</button>
+      </div>
+      <button class="menu_burger"><img class="burger_icon" src="src/svg/menu_icon.svg" alt="Menu" aria-label="Открыть меню сайта"></button>
+    </header>
+    <main>
+      <section class="top_section"><img class="top_image" src="src/svg/undraw_team_spirit_hrr41.svg" alt="Иллюстрация - команда" aria-hidden="true">
+        <h1>О нас</h1>
+        <p class="top_text">Это учебный проект, созданный с целью получения боевого опыта в разработке настоящего живого веб-приложения. Этот сервис имитирует работу каршеринга, в котором можно не только арендовать автомобили, но и сдавать их в аренду.</p>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <div class="contact_details">
+          <div class="contacts_item">
+            <p class="contact_type">Электронная почта</p>
+            <p class="contact_info">drive@skillfactory.com</p>
+          </div>
+          <div class="vertical_separator"></div>
+          <div class="contacts_item">
+            <p class="contact_type">Телефон</p>
+            <p class="contact_info">+7 912 123-45-67</p>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <h2>Команда</h2>
+        <div class="team_display">
+          <div class="team_member"><img class="team_photo" src="src/img/about_ivanov.jpg" alt="Иван Иванов фото">
+            <p class="name">Иван Иванов</p>
+            <p class="role">CEO</p>
+          </div>
+          <div class="team_member"><img class="team_photo" src="src/img/about_smirnov.jpg" alt="Алексей Смирнов фото">
+            <p class="name">Алексей Смирнов</p>
+            <p class="role">Frontend-разработчик</p>
+          </div>
+          <div class="team_member"><img class="team_photo" src="src/img/about_yartsev.jpg" alt="Денис Ярцев фото">
+            <p class="name">Денис Ярцев</p>
+            <p class="role">Backend-разработчик</p>
+          </div>
+          <div class="team_member"><img class="team_photo" src="src/img/about_morozov.jpg" alt="Николай Морозов фото">
+            <p class="name">Николай Морозов</p>
+            <p class="role">Дизайнер</p>
+          </div>
+          <div class="team_member"><img class="team_photo" src="src/img/about_deyeva.jpg" alt="Ирина Деева фото">
+            <p class="name">Ирина Деева</p>
+            <p class="role">Копирайтер</p>
+          </div>
+          <div class="team_member"><img class="team_photo" src="src/img/about_strelkova.jpg" alt="Мария Стрелкова фото">
+            <p class="name">Мария Стрелкова</p>
+            <p class="role">SMM</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="copyright">© SkillDrive Inc. 2020</div>
+      <nav class="social_bar">
+        <ul class="menu_social">
+          <li class="social_icon"><a class="social_link icon-vk" href="https://vk.com" target="_blank" aria-label="Переход на страницу SkillDrive в ВКонтакте"></a></li>
+          <li class="social_icon"><a class="social_link icon-instagram" href="https://instagram.com" target="_blank" aria-label="Переход на страницу SkillDrive в Инстаграм"></a></li>
+          <li class="social_icon"><a class="social_link icon-facebook" href="https://facebook.com" target="_blank" aria-label="Переход на страницу SkillDrive в Фейсбук"></a></li>
+        </ul>
+      </nav>
+    </footer>
+  <script src="main.js"></script></body>
+</html>
