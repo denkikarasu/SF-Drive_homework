@@ -90,16 +90,14 @@ footer {
   justify-content: space-between; }
   footer .copyright {
     font-size: 16px;
-    color: #FFFFFF;
-    opacity: 40%; }
+    color: rgba(255, 255, 255, 0.4); }
   footer ul.menu_social li {
     padding: 0 8px; }
     footer ul.menu_social li .social_link {
       color: #FFFFFF;
       font-size: 26px; }
       footer ul.menu_social li .social_link:hover {
-        color: #FFFFFF;
-        opacity: 40%; }
+        color: rgba(255, 255, 255, 0.4); }
 
 @media screen and (max-width: 700px) {
   footer {

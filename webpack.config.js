@@ -2,6 +2,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
     entry: './src/js/index.js',
@@ -14,17 +16,25 @@ module.exports = {
         new TerserJSPlugin(), 
         new OptimizeCSSAssetsPlugin(),
         new HtmlWebpackPlugin( {
-            template: './src/index.pug',
+            template: './src/pug/index.pug',
             filename: 'index.html',
         }),
         new HtmlWebpackPlugin( {
-            template: './src/about.pug',
+            template: './src/pug/about.pug',
             filename: 'about.html',
         }),
         new HtmlWebpackPlugin( {
-            template: './src/faq.pug',
+            template: './src/pug/faq.pug',
             filename: 'faq.html',
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+              { from: './src/fonts/', to: './fonts/' },
+            ],
+            options: {
+              concurrency: 100,
+            },
+          })
     ],
     optimization: {
         minimize: true,

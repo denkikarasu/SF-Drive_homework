@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/denkikarasu/SF-Drive_homework#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^6.3.0",
     "css-loader": "^5.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
