@@ -1,29 +1,13 @@
 doctype html
 html(lang='ru')
   head
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width')
-    // Шрифты подключены отдельным файлом - временное решение для обходы проблемы со сборкой стилей с помощью webpack
-    link(rel='stylesheet' type='text/css' href='temp_fonts.css')
-    link(rel='stylesheet' type='text/css' href='main.css')
+    //- Include head
+    include ./components/head.pug
     script(src='main.js')
     title Частые вопросы
   body
-    header
-      a.logo_link(href='index.html' aria-label='Ссылка на главную страницу сервиса SkillDrive')
-        img.logo_img(src='img/Logo.svg' alt='SkillDrive')
-      .navbar
-        nav.navbar_menu
-          ul
-            li.navbar_item
-              a.navbar_link(href='about.html') О нас
-            li.navbar_item
-              a.navbar_link(href='terms.html') Условия
-            li.navbar_item
-              a.navbar_link(href='faq.html') Частые вопросы
-        button.button_login(onclick='') Войти
-      button.menu_burger
-        img.burger_icon(src='img/menu_icon.svg' alt='Menu' aria-label='Открыть меню сайта')
+    //- Include header
+    include ./components/header.pug
     main.faq
       section.top_section
         img.top_image(src='img/undraw_questions_75e01.svg' alt='Иллюстрация - вопросы' aria-hidden='true')
@@ -66,13 +50,5 @@ html(lang='ru')
         .content
           p
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    footer
-      .copyright © SkillDrive Inc. 2020
-      nav.social_bar
-        ul.menu_social
-          li.social_icon
-            a.social_link.icon-vk(href='https://vk.com' target='_blank' aria-label='Переход на страницу SkillDrive в ВКонтакте')
-          li.social_icon
-            a.social_link.icon-instagram(href='https://instagram.com' target='_blank' aria-label='Переход на страницу SkillDrive в Инстаграм')
-          li.social_icon
-            a.social_link.icon-facebook(href='https://facebook.com' target='_blank' aria-label='Переход на страницу SkillDrive в Фейсбук')
+    //- Include footer
+    include ./components/footer.pug
