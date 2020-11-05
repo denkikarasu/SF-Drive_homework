@@ -21,8 +21,13 @@
   },
   "homepage": "https://github.com/denkikarasu/SF-Drive_homework#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
     "copy-webpack-plugin": "^6.3.0",
     "css-loader": "^5.0.0",
+    "eslint": "^7.12.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-webpack-plugin": "^2.2.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^1.2.1",

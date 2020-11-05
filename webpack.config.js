@@ -3,6 +3,7 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 
 
 module.exports = {
@@ -34,7 +35,12 @@ module.exports = {
             options: {
               concurrency: 100,
             },
-          })
+          }),
+        new ESLintWebpackPlugin( {
+            files: './src/js',
+            extensions: ['js', 'ts'],
+            failOnError: true
+        })
     ],
     optimization: {
         minimize: true,
@@ -75,8 +81,13 @@ module.exports = {
                 }
             },
             {
+                test: /\.(ts|js)$/,
+                exclude: '/node_modules',
+                use: 'eslint-loader'
+            },
+            {
                 test: /\.ts$/,
-                use: ['ts-loader']
+                use: 'ts-loader'
             }
         ]
     }
