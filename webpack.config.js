@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: './src/js/index.ts',
     mode: 'development',
     output: {
         filename: 'main.js'
@@ -73,6 +73,10 @@ module.exports = {
                         name: '[name].[ext]',
                     },
                 }
+            },
+            {
+                test: /\.ts$/,
+                use: ['ts-loader']
             }
         ]
     }

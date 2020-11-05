@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "ES6",
+        "target": "ES6",
+        // "removeComments": true,
+        // "outDir": "js",
+        "sourceMap": true
+        // "outFile": "main.js"
+    },
+    "exclude": [
+        "node_modules",
+        "assets"
+    ]
+  }
