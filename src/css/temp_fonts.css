@@ -1,101 +1,113 @@
 @font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotothin.woff2") format("woff2"), url("fonts/Robotothin.woff") format("woff"), url("fonts/Robotothin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotothinitalic.woff2") format("woff2"), url("fonts/Robotothinitalic.woff") format("woff"), url("fonts/Robotothinitalic.ttf") format("truetype");
-    font-weight: 100;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotolight.woff2") format("woff2"), url("fonts/Robotolight.woff") format("woff"), url("fonts/Robotolight.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotolightitalic.woff2") format("woff2"), url("fonts/Robotolightitalic.woff") format("woff"), url("fonts/Robotolightitalic.ttf") format("truetype");
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Roboto.woff2") format("woff2"), url("fonts/Roboto.woff") format("woff"), url("fonts/Roboto.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotoitalic.woff2") format("woff2"), url("fonts/Robotoitalic.woff") format("woff"), url("fonts/Robotoitalic.ttf") format("truetype");
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotomedium.woff2") format("woff2"), url("fonts/Robotomedium.woff") format("woff"), url("fonts/Robotomedium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotomediumitalic.woff2") format("woff2"), url("fonts/Robotomediumitalic.woff") format("woff"), url("fonts/Robotomediumitalic.ttf") format("truetype");
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotobold.woff2") format("woff2"), url("fonts/Robotobold.woff") format("woff"), url("fonts/Robotobold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotobolditalic.woff2") format("woff2"), url("fonts/Robotobolditalic.woff") format("woff"), url("fonts/Robotobolditalic.ttf") format("truetype");
-    font-weight: 700;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotoblack.woff2") format("woff2"), url("fonts/Robotoblack.woff") format("woff"), url("fonts/Robotoblack.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Robotoblackitalic.woff2") format("woff2"), url("fonts/Robotoblackitalic.woff") format("woff"), url("fonts/Robotoblackitalic.ttf") format("truetype");
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Roboto";
+  src: url("fonts/Robotothin.woff2") format("woff2"), url("fonts/Robotothin.woff") format("woff"), url("fonts/Robotothin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotothinitalic.woff2") format("woff2"), url("fonts/Robotothinitalic.woff") format("woff"), url("fonts/Robotothinitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotolight.woff2") format("woff2"), url("fonts/Robotolight.woff") format("woff"), url("fonts/Robotolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotolightitalic.woff2") format("woff2"), url("fonts/Robotolightitalic.woff") format("woff"), url("fonts/Robotolightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto.woff2") format("woff2"), url("fonts/Roboto.woff") format("woff"), url("fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotoitalic.woff2") format("woff2"), url("fonts/Robotoitalic.woff") format("woff"), url("fonts/Robotoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotomedium.woff2") format("woff2"), url("fonts/Robotomedium.woff") format("woff"), url("fonts/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotomediumitalic.woff2") format("woff2"), url("fonts/Robotomediumitalic.woff") format("woff"), url("fonts/Robotomediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotobold.woff2") format("woff2"), url("fonts/Robotobold.woff") format("woff"), url("fonts/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotobolditalic.woff2") format("woff2"), url("fonts/Robotobolditalic.woff") format("woff"), url("fonts/Robotobolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotoblack.woff2") format("woff2"), url("fonts/Robotoblack.woff") format("woff"), url("fonts/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Robotoblackitalic.woff2") format("woff2"), url("fonts/Robotoblackitalic.woff") format("woff"), url("fonts/Robotoblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
 
 /* Icon font */
 
 @font-face {
-    font-family: 'social_icons';
-    src: url('fonts/social_icons.eot');
-    src: url('fonts/social_icons.eot?#iefix') format('embedded-opentype'),
-         url('fonts/social_icons.woff') format('woff'),
-         url('fonts/social_icons.ttf') format('truetype'),
-         url('fonts/social_icons.svg#social_icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'social_icons';
+  src: url('fonts/social_icons.eot');
+  src:
+    url('fonts/social_icons.eot?#iefix') format('embedded-opentype'),
+    url('fonts/social_icons.woff') format('woff'),
+    url('fonts/social_icons.ttf') format('truetype'),
+    url('fonts/social_icons.svg#social_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-[class*='icon-']:before{
-	display: inline-block;
-   font-family: 'social_icons';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+
+[class*='icon-']::before {
+  display: inline-block;
+  font-family: 'social_icons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.icon-facebook:before{content:'\0041';}
-.icon-instagram:before{content:'\0042';}
-.icon-vk:before{content:'\0043';}
-.icon-menu_icon:before{content:'\0044';}
-.icon-chevron-down:before{content:'\0045';}
-.icon-chevron-up:before{content:'\0046';}
+.icon-facebook::before { content: '\0041'; }
+.icon-instagram::before { content: '\0042'; }
+.icon-vk::before { content: '\0043'; }
+.icon-menu_icon::before { content: '\0044'; }
+.icon-chevron-down::before { content: '\0045'; }
+.icon-chevron-up::before { content: '\0046'; }
