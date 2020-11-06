@@ -47,6 +47,9 @@ module.exports = {
             // fix: true
         })
     ],
+    devServer: {
+        contentBase: '.dist'
+    },
     optimization: {
         minimize: true,
         minimizer: [new TerserJSPlugin(), 
