@@ -48,7 +48,13 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: '.dist'
+        contentBase: '.dist',
+        // port: 3001,
+        stats: {
+            children: false,
+            maxModules: 0
+        }
+
     },
     optimization: {
         minimize: true,
