@@ -53,9 +53,10 @@ module.exports = {
         stats: {
             children: false,
             maxModules: 0
-        }
-
+        },
+        hot:true
     },
+    devtool: 'inline-source-map',
     optimization: {
         minimize: true,
         minimizer: [new TerserJSPlugin(), 

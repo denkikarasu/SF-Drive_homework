@@ -1,3 +1,27 @@
+/*! ../css/temp_styles.css */
+
+/*! ../img/about_deyeva.jpg */
+
+/*! ../img/about_ivanov.jpg */
+
+/*! ../img/about_morozov.jpg */
+
+/*! ../img/about_smirnov.jpg */
+
+/*! ../img/about_strelkova.jpg */
+
+/*! ../img/about_yartsev.jpg */
+
+/*! ../svg/Logo.svg */
+
+/*! ../svg/menu_icon.svg */
+
+/*! ../svg/undraw_questions_75e01.svg */
+
+/*! ../svg/undraw_team_spirit_hrr41.svg */
+
+/*! ./collapsible.ts */
+
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 
 /*! exports [not provided] [no usage info] */
