@@ -1,4 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
+import {
+    BrowserRouter as Router,
+  } from "react-router-dom";
 
 // import '../css/styles.css';
 
@@ -11,13 +14,13 @@ import Main from "./Main";
 import Footer from "./Footer";
 
 function App() {
-        return (
-            <>
-                <Header />
-                <Main />
-                <Footer />
-            </>
-        );
+  return (
+    <Router>
+        <Header />
+        <Main />
+        <Footer />
+    </Router>
+  );
 }
 
 export default App;

@@ -1,3 +1,4 @@
+const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -8,9 +9,11 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 
 
 module.exports = {
-    entry: './src/js/index.ts',
+    // entry: './src/js/index.ts',
+    entry: './src/index.js',
     mode: 'development',
     output: {
+        path: path.join(__dirname, "/dist"),
         filename: 'main.js'
     },
     plugins: [ 
@@ -18,9 +21,12 @@ module.exports = {
         new TerserJSPlugin(), 
         new OptimizeCSSAssetsPlugin(),
         new HtmlWebpackPlugin( {
-            template: './src/pug/index.pug',
-            filename: 'index.html',
+            template: './src/index.html'
         }),
+        // new HtmlWebpackPlugin( {
+        //     template: './src/pug/index.pug',
+        //     filename: 'index.html',
+        // }),
         // new HtmlWebpackPlugin( {
         //     template: './src/pug/about.pug',
         //     filename: 'about.html',
