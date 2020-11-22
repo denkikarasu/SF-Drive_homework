@@ -21,14 +21,14 @@ module.exports = {
             template: './src/pug/index.pug',
             filename: 'index.html',
         }),
-        new HtmlWebpackPlugin( {
-            template: './src/pug/about.pug',
-            filename: 'about.html',
-        }),
-        new HtmlWebpackPlugin( {
-            template: './src/pug/faq.pug',
-            filename: 'faq.html',
-        }),
+        // new HtmlWebpackPlugin( {
+        //     template: './src/pug/about.pug',
+        //     filename: 'about.html',
+        // }),
+        // new HtmlWebpackPlugin( {
+        //     template: './src/pug/faq.pug',
+        //     filename: 'faq.html',
+        // }),
         new CopyWebpackPlugin({
             patterns: [
               { from: './src/fonts/', to: './fonts/' },
@@ -76,15 +76,15 @@ module.exports = {
                     'css-loader'
                 ]
             },
-            {
-                test: /\.pug$/i,
-                use: {
-                    loader: 'pug-loader',
-                    options: {
-                        pretty: true
-                    }
-                }
-            },
+            // {
+            //     test: /\.pug$/i,
+            //     use: {
+            //         loader: 'pug-loader',
+            //         options: {
+            //             pretty: true
+            //         }
+            //     }
+            // },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 use: {
@@ -95,14 +95,21 @@ module.exports = {
                     },
                 }
             },
+            // {
+            //     test: /\.(ts|js)$/,
+            //     exclude: '/node_modules',
+            //     use: 'eslint-loader'
+            // },
+            // {
+            //     test: /\.ts$/,
+            //     use: 'ts-loader'
+            // }
             {
-                test: /\.(ts|js)$/,
-                exclude: '/node_modules',
-                use: 'eslint-loader'
-            },
-            {
-                test: /\.ts$/,
-                use: 'ts-loader'
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
             }
         ]
     }
