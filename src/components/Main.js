@@ -1,12 +1,13 @@
 import React from "react";
-import {
+import { 
     Switch,
     Route
-  } from "react-router-dom";
+} from "react-router-dom";
 
-  import Home from "./Home";
-  import About from "./About";
-  import FAQ from "./FAQ";
+import Home from "./Home";
+import About from "./About";
+import FAQ from "./FAQ";
+import Terms from "./Terms";
 
 function Main () {
     return (
@@ -17,6 +18,9 @@ function Main () {
                 </Route>
                 <Route path="/about">
                     <About />
+                </Route>
+                <Route path="/terms">
+                    <Terms />
                 </Route>
                 <Route path="/faq">
                     <FAQ />
