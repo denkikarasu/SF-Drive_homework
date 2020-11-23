@@ -26,11 +26,11 @@ function Header () {
                     </ul>
                 </nav>
 
-                <button className="button_login" onclick="">Войти</button>
+                <button className="button_login">Войти</button>
             </div>
 
             <button className="menu_burger">
-                <img className="burger_icon" src="src/svg/menu_icon.svg" alt="Menu"  aria-label="Открыть меню сайта" />
+                <img className="burger_icon" src="img/menu_icon.svg" alt="Menu"  aria-label="Открыть меню сайта" />
             </button>
 
         </header>

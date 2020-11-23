@@ -8,6 +8,8 @@ import "../img/about_smirnov.jpg";
 import "../img/about_strelkova.jpg";
 import "../img/about_yartsev.jpg";
 
+import Team from "./Team";
+
 function About () {
     return (
         <>
@@ -37,46 +39,8 @@ function About () {
 
             </section>
 
-            <section className="team">
+            <Team />
 
-                <h2>Команда</h2>
-
-                <div className="team_display">
-
-                    <div className="team_member">
-                        <img className="team_photo" src="img/about_ivanov.jpg" alt="Иван Иванов фото" />
-                        <p className="name">Иван Иванов</p>
-                        <p className="role">CEO</p>
-                    </div>
-                    <div className="team_member">
-                        <img className="team_photo" src="img/about_smirnov.jpg" alt="Алексей Смирнов фото" />
-                        <p className="name">Алексей Смирнов</p>
-                        <p className="role">Frontend-разработчик</p>
-                    </div>
-                    <div className="team_member">
-                        <img className="team_photo" src="img/about_yartsev.jpg" alt="Денис Ярцев фото" />
-                        <p className="name">Денис Ярцев</p>
-                        <p className="role">Backend-разработчик</p>
-                    </div>
-                    <div className="team_member">
-                        <img className="team_photo" src="img/about_morozov.jpg" alt="Николай Морозов фото" />
-                        <p className="name">Николай Морозов</p>
-                        <p className="role">Дизайнер</p>
-                    </div>
-                    <div className="team_member">
-                        <img className="team_photo" src="img/about_deyeva.jpg" alt="Ирина Деева фото" />
-                        <p className="name">Ирина Деева</p>
-                        <p className="role">Копирайтер</p>
-                    </div>
-                    <div className="team_member">
-                        <img className="team_photo" src="img/about_strelkova.jpg" alt="Мария Стрелкова фото" />
-                        <p className="name">Мария Стрелкова</p>
-                        <p className="role">SMM</p>
-                    </div>
-                </div>
-                
-
-            </section>
         </>
 
     );
