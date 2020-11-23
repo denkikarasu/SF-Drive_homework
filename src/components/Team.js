@@ -42,7 +42,7 @@ function Team () {
 
             <div className="team_display">
                 {teamList.map(teamMember => 
-                    <div className="team_member">
+                    <div className="team_member" key={teamMember.name}>
                         <img className="team_photo" src={teamMember.photo} alt={teamMember.name + " фото"} />
                         <p className="name">{teamMember.name}</p>
                         <p className="role">{teamMember.role}</p>
