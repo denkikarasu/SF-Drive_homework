@@ -27,29 +27,31 @@ const argv = yargs
         if(argv.type === "f") {
             console.log("type f");
             content = 
-`import React from "react";
+`import React, {Fragment} from "react";
 
 function ${componentName} () {
     return (
-        <p>${componentName} contents</p>
+        <>
+            <p>${componentName} contents</p>
+        </>
     );
 }
 
 export default ${componentName};`;
         } else if (argv.type === "s") {
             content = 
-`import React, {useState} from "react";
+`import React, {Fragment, useState} from "react";
 
 function ${componentName} (props) {
     const [state, changeState] = useState(false);
 
     return (
-        <div>  
+        <>  
             <p>${componentName} contents</p>
             { state ? 
                 <button onClick={() => changeState(true)}>Change state</button> : <button onClick={() => changeState(false)}>Change state</button> 
             }
-        </div>
+        </>
     );
 }
 
