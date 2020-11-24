@@ -63,5 +63,5 @@ export default ${componentName};`;
             .then(() => console.log("The component has been created."))
             .catch(err => console.log("Error: ", err));
     })
-    .demandCommand(1, " Please enter the command \"create\" to create component.\n Use flag --path (-p) to specify path. \n Use flag --type (-t) to specify component type: f - functional (stateless), s - statefull.")
+    .demandCommand(1, " Please enter the command \"create [ComponentName]\" to create component.\n Use flag --path (-p) to specify path. \n Use flag --type (-t) to specify component type: f - functional (stateless), s - statefull.")
     .argv;
